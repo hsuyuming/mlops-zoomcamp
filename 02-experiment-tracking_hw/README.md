@@ -32,7 +32,25 @@
 
 ### mlflow cmd
 ```cmd
-cd /Users/xxxx/mlops-zoomcamp/02-experiment-tracking_experience
-mlflow ui --backend-store-uri sqlite:////tmp/mlflow.db --default-artifact-root=/tmp/mlrun  --artifacts-destination=/tmp/mlartifacts
+cd /Users/xxxxx/mlops-zoomcamp/02-experiment-tracking_hw
+mlflow ui --backend-store-uri sqlite:////tmp/mlflow.db
 ```
 
+### Consideration
+- training duration  
+- model size
+- performance
+
+
+### Home work
+```cmd
+
+python ./homework/preprocess_data.py --raw_data_path=./data --dest_path=./output
+
+python ./homework/train.py --data_path=./output 
+
+(mlops-zoomcamp) xxxx@xxxxx 02-experiment-tracking_hw % python ./homework/hpo.py
+100%|█████████████████████████| 50/50 [05:00<00:00,  6.00s/trial, best loss: 6.6284257482044735]
+
+
+```
