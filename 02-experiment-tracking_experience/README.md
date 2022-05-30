@@ -30,7 +30,7 @@
 - Author
 
 
-### mlflow cmd
+### metaflow cmd
 ```cmd
 cd /Users/xxxx/mlops-zoomcamp/02-experiment-tracking_experience
 mlflow ui --backend-store-uri sqlite:////tmp/mlflow.db --default-artifact-root=/tmp/mlrun  --artifacts-destination=/tmp/mlartifacts
